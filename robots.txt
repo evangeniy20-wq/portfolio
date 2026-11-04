@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://evangeniy20-wq.github.io/portfolio/sitemap.xml
