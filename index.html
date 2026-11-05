@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#f4f1ea">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f4f1ea'/%3E%3Cpath d='M16 6l5 10-5 10-5-10z' fill='%238a1424'/%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Создание сайтов для местного бизнеса","areaServed":"Россия","email":"evjeniy22@gmail.com"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Создание сайтов для местного бизнеса","areaServed":"Россия"}</script>
 <style>
 @font-face{font-family:"Inter";font-weight:100 900;font-style:normal;font-display:swap;src:url(assets/7e300aab69.woff) format("woff")}
 @font-face{font-family:"Corm";font-weight:300 700;font-style:normal;font-display:swap;src:url(assets/590e237015.woff) format("woff")}
@@ -681,8 +681,6 @@ html[lang=en] .vs__a::before{content:"Builder: "}html[lang=en] .vs__b::before{co
       <h2 class="disp hw" data-en="Contact">Заявка</h2>
       <p class="lead" data-en="Describe your business and city. I’ll reply and suggest where to start.">Опишите бизнес и город. Отвечу и предложу, с чего начать.</p>
       <a class="btn btn--acc tgbig" href="https://t.me/Knyazev_NG" target="_blank" rel="noopener" data-goal="tg_lead"><span data-en="Message me on Telegram">Написать в Telegram</span> <span class="arr">&#8594;</span></a>
-      <p class="lead2__or" data-en="or by email">или на почту</p>
-      <a class="mailbig" href="mailto:evjeniy22@gmail.com" data-goal="mail_click">evjeniy22@gmail.com</a>
       <p class="lead2__city" data-en="Moscow · I work with all of Russia">Москва · работаю по всей России</p>
       <img class="sec-ill lz" data-k="letter" alt="" aria-hidden="true" width="600" height="415">
     </div>
@@ -691,9 +689,9 @@ html[lang=en] .vs__a::before{content:"Builder: "}html[lang=en] .vs__b::before{co
       <label><span data-en="Name">Имя</span><input name="name" required autocomplete="name"></label>
       <label><span data-en="Phone or Telegram">Телефон или Telegram</span><input name="contact" required autocomplete="tel"></label>
       <label class="lf__w"><span data-en="What your business does">Чем занимается бизнес</span><textarea name="message"></textarea></label>
-      <button class="btn btn--acc" type="submit"><span data-en="Send request">Отправить заявку</span> <span class="arr">&#8594;</span></button>
-      <p class="lf__note" data-en="The button opens your email app with the request filled in. Your contacts are used only to reply.">Кнопка откроет почту с готовым письмом. Контакты нужны только для ответа.</p>
-      <p class="lf__ok" id="leadOk" role="status" data-en="Your email app has opened with the request: send it and I’ll reply.">Открылось письмо с вашей заявкой: отправьте его, и я отвечу.</p>
+      <button class="btn btn--acc" type="submit"><span data-en="Send via Telegram">Отправить в Telegram</span> <span class="arr">&#8594;</span></button>
+      <p class="lf__note" data-en="The button opens my Telegram and copies your request: just paste it into the chat.">Кнопка откроет мой Telegram и скопирует заявку: просто вставьте её в чат.</p>
+      <p class="lf__ok" id="leadOk" role="status" data-en="Request copied. Paste it into the Telegram chat and send.">Заявка скопирована. Вставьте её в чат Telegram и отправьте.</p>
     </form>
   </div>
 </section>
@@ -708,7 +706,7 @@ html[lang=en] .vs__a::before{content:"Builder: "}html[lang=en] .vs__b::before{co
     </div>
     <div class="ft__cols">
       <div class="ft__col"><h4 data-en="Navigation">Навигация</h4><a href="#about" data-en="About">Обо мне</a><a href="#work" data-en="Work">Работы</a><a href="#process" data-en="Process">Как работаю</a><a href="#inside" data-en="What’s inside">Что внутри</a><a href="#price" data-en="Packages">Пакеты</a><a href="#posters" data-en="Posters">Постеры</a></div>
-      <div class="ft__col"><h4 data-en="Contacts">Контакты</h4><a href="https://t.me/Knyazev_NG" target="_blank" rel="noopener" data-goal="tg_footer">Telegram: @Knyazev_NG</a><a href="mailto:evjeniy22@gmail.com" data-goal="mail_click">evjeniy22@gmail.com</a><p data-en="Moscow">Москва</p></div>
+      <div class="ft__col"><h4 data-en="Contacts">Контакты</h4><a href="https://t.me/Knyazev_NG" target="_blank" rel="noopener" data-goal="tg_footer">Telegram: @Knyazev_NG</a><p data-en="Moscow">Москва</p></div>
     </div>
   </div>
   <div class="ft__bot"><span data-en="&copy; 2026 POLIGON. Websites for local business.">&copy; 2026 POLIGON. Сайты для местного бизнеса.</span><span data-en="All work is labelled: client project, demo or concept.">Все работы подписаны: клиентский проект, демо или концепт.</span></div>
@@ -727,9 +725,9 @@ var f=document.getElementById("leadForm");if(f)f.addEventListener("submit",funct
  var g=function(n){var x=f.querySelector("[name="+n+"]");return x?x.value.trim():""};
  if(g("bot-field"))return;
  var en=document.documentElement.lang==="en";
- var subj=en?"Website request":"Заявка на сайт";
- var body=(en?"Name: ":"Имя: ")+g("name")+"\n"+(en?"Contact: ":"Контакт: ")+g("contact")+"\n\n"+g("message");
- location.href="mailto:evjeniy22@gmail.com?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(body);
+ var body=(en?"Website request\nName: ":"Заявка на сайт\nИмя: ")+g("name")+"\n"+(en?"Contact: ":"Контакт: ")+g("contact")+"\n"+g("message");
+ try{if(navigator.clipboard)navigator.clipboard.writeText(body)}catch(_){}
+ window.open("https://t.me/Knyazev_NG","_blank","noopener");
  var o=document.getElementById("leadOk");if(o)o.style.display="block"});
 if(/[?&]ok=1/.test(location.search)){var o=document.getElementById("leadOk");if(o)o.style.display="block"}
 var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
